@@ -1,0 +1,11 @@
+torch
+numpy
+matplotlib
+pandas
+librosa
+museval
+wandb 
+tqdm
+torchlibrosa
+ipython
+pretty_midi
