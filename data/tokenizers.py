@@ -264,6 +264,14 @@ class Tokenizer:
             if token is not None:
                 return start_token + token
             else:
+                # we do the below because we are partitioning
+                # the ID space:
+                # IDs (0 - 3) for <pad>, <sos>...etc
+                # IDs (4 - 103) for name=
+                # IDs (104 - 6104) for time=
+                # This means for itos, we do the reverse...
+                # In summary, 4 for name= is the global token ID, 
+                # however, its local idx is 0
                 start_token += tokenizer.vocab_size
 
         raise NotImplementedError("{} is not supported!".format(string))
