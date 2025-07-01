@@ -32,3 +32,19 @@ pip install -r requirements.txt
 ```
 ---
 
+
+### Training
+To train the three models for onset, velocity and offset prediction, run:
+---
+```
+./train.sh
+```
+---
+
+### Inference
+To run inference for the three models for onset, velocity and offset prediction, run:
+---
+```
+./inference.sh
+```
+---
