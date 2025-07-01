@@ -1,4 +1,7 @@
 torch
+soundfile
+mir_eval
+torchaudio
 numpy
 matplotlib
 pandas
